@@ -1,0 +1,31 @@
+{
+  "name": "ts-node-vscode-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "npm run build && node ./dist/main.js",
+    "build": "npm run clean && npm run lint && tsc",
+    "clean": "rimraf dist",
+    "lint": "tslint ./src/**/*.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhlee8804/ts-node-vscode-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhlee8804/ts-node-vscode-template/issues"
+  },
+  "homepage": "https://github.com/jhlee8804/ts-node-vscode-template#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "rimraf": "^2.6.2",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.2"
+  }
+}
